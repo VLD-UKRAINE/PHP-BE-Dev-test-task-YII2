@@ -1,0 +1,12 @@
+# Use curl
+# curl -i -H "Accept:application/json" "http://localhost:8080/albums"
+# All albums
+GET http://localhost:8080/albums
+Accept: application/json
+###
+# Use curl
+# curl -i -H "Accept:application/json" "http://localhost:8080/users"
+# All users
+GET http://localhost:8080/users
+Accept: application/json
+###
