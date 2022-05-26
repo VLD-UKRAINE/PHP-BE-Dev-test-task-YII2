@@ -68,4 +68,15 @@ class Album extends \yii\db\ActiveRecord
     {
         return $this->hasOne(User::className(), ['id' => 'userId']);
     }
+
+    public function extraFields() {
+        $fields = parent::fields();
+
+        $fields['photos'] = function (Album $model)
+        {
+            return $model->photos;
+        };
+
+        return $fields;
+    }
 }

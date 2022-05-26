@@ -5,8 +5,32 @@ GET http://localhost:8080/albums
 Accept: application/json
 ###
 # Use curl
-# curl -i -H "Accept:application/json" "http://localhost:8080/users"
+# curl -i -H "Accept:application/json" "http://localhost:8080/albums/{id}"
+# Recive album by id
+GET http://localhost:8080/albums/2
+Accept: application/json
+###
+# Use curl
+# curl -i -H "Accept:application/json" "http://localhost:8080/albums/2?expand=photos"
+# Recive album by id with photos
+GET http://localhost:8080/albums/2?expand=photos
+Accept: application/json
+###
+# Use curl
+# curl -i -H "Accept:application/json" "http://localhost:8080/users/{id}"
+# Recive user by id
+GET http://localhost:8080/users/3
+Accept: application/json
+###
+# Use curl
+# curl -i -H "Accept:application/json" "http://localhost:8080/users/"
 # All users
 GET http://localhost:8080/users
+Accept: application/json
+###
+# Use curl
+# curl -i -H "Accept:application/json" "http://localhost:8080/users/10?expand=albums"
+# Recive user by id with all albums
+GET http://localhost:8080/users/10?expand=albums
 Accept: application/json
 ###

@@ -61,4 +61,15 @@ class User extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Album::className(), ['userId' => 'id']);
     }
+
+    public function extraFields() {
+        $fields = parent::fields();
+
+        $fields['albums'] = function (User $model)
+        {
+            return $model->albums;
+        };
+
+        return $fields;
+    }
 }
