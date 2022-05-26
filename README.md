@@ -5,7 +5,7 @@
     <h1 align="center">Yii 2 Basic Project Template</h1>
     <br>
 </p>
-
+# PHP-BE-Dev-test-task-YII2
 Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 rapidly creating small projects.
 
@@ -231,4 +231,4 @@ vendor/bin/codecept run functional,unit --coverage --coverage-html --coverage-xm
 ```
 
 You can see code coverage output under the `tests/_output` directory.
-# PHP-BE-Dev-test-task-YII2
+
